@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body class="table-responsive">
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-default fixed-top navbar-light bg-light">
+      <div class ="container">
+        <div class = "navbar header">
+      <ul>
+        <li>
+          <a class = "navbar-brand" href="//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/index.html">Latitude Home</a>
+        </li>
+      </ul>
+      </div>
+      <div class = "container">
+      <ul>
+        <li>
+          <a href="#">Plots</a>
+          <select id="touchsplashmenu" onchange="window.open(this.value,'_self');">
+            <option value="#">Choose your page</option>
+            <option value="//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/tempurature.html">Max Temp</option>
+            <option value="//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/wind.html">Wind Speed</option>
+            <option value="//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/cloudiness.html">Cloudiness</option>
+            <option value="//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/humidity.html">Humidity</option>
+          </select>
+        </li>
+        <li>
+          <a href="//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/comparisons.html">Comparison</a>
+        </li>
+        <li>
+          <a href="//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/data.html">Data</a>
+        </li>
+      </ul>
+      </div>
+      <div class="clearfix"></div>
+    </nav>
+
+  <div class = "container-fluid">
+  <h1>Latitude Vs Wind Speed</h1>
+  </div>
+  <div class = "container-fluid">
+  <h1>Latitude Vs Weather</h1>
+  </div>   
+
+    <!--header class="header">
+  
+    <h1>Latitude Vs Weather </h1>
+
+    </header-->
+  
+      <a target="_blank" href="assets/Temp.png">
+      <img target="_blank" src="assets/Temp.png" alt="Tempurature Map">
+      </a>
+      <p><em>Temperature Map</em></p>
+    </article>
+
+  <p>The task for the Latitude vs Weather project was to understand if weather changes due to a locations proximity to the equator.  
+    First step was to source recorded weather data from the OpenWeatherMap API on over 500 cities.
+  </p>
+
+  <p>Once the data was collected and organized, MatPlotLib was used to plot weather data vs. latitude. This site provides source data, visualizations
+    and findings of our analysis of maximum tempurature, cloudiness, humitidy and wind speed and how these elements of weather are affected by latitude.  
+  </p>
+
+  
+</body>
+</html>
+
+
+<body>
+    <section>
+      <h3>Visualizations</h3>
+      <article>
+      <a target="_blank" href="assets/Cloudiness.png">
+      <img src="assets/Cloudiness.png" onclick="location.href = '//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/cloudiness.html';" style="cursor: pointer;">
+      </a>
+      <p><em>Cloudy Map</em></p>
+      </article>
+      <hr>
+      <article>
+      <a target="_blank" href="assets/Humidity.png">
+      <img src="assets/Humidity.png" onclick="location.href = '//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/humidity.html';" style="cursor: pointer;">
+      </a>
+      <p><em>Humidity Map</em></p>
+      </article>
+      <hr>
+      <article>
+        <a target="_blank" href="assets/Temp.png">
+        <img src="assets/Temp.png" onclick="location.href = '//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/tempurature.html';" style="cursor: pointer;">
+        </a>
+        <p><em>Temperature Map</em></p>
+      </article>
+      <hr>
+      <!-- an example using figure/ficaption -->
+      <figure>
+        <a target="_blank" href="assets/Windspeed.png">
+        
+        <img src="assets/Windspeed.png" onclick="location.href = '//C:/Users/kehar/OneDrive/Documents/Web_Challenge_Folder/Web-Design-Challenge/wind.html';" style="cursor: pointer;">
+        </a>
+        <figcaption><em>Wind Map</em></figcaption>
+      </figure>
+    </section>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+    </body>
+  
+  </html>
